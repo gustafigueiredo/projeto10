@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+	--color1: yellow;
+	--color2: white;
+	--color3: #ccab27;
+
+	--bg1: yellow;
+	--bg2: white;
+}
+
+body , html{
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+}
+
+nav {
+	background-color: transparent;
+}
+
+nav img {
+	width: 50px;
+}
+
+.navbar-brand {
+	color: var(--color2);
+	text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+	color: var(--color3);
+}
+
+nav img , .navbar-brand {
+	display: flex;
+	justify-items: center;
+	align-self: center;
+	margin: 10px;
+}
+
+nav ul{
+	margin-left: auto;
+}
+
+nav ul li {
+	font-size: 15px;
+}
+
+nav ul li a:first-of-type{
+	color: var(--color2);
+	text-transform: uppercase;
+}
+
+nav ul li .nav-link:hover{
+	color: var(--color3);
+}
+
+/*titulo principal do header*/
+.header-text {
+	color: var(--color2);
+	margin-top: 5%;
+}
+
+.btn-contato{
+	background-color: var(--color3);
+	border-radius: 0px;
+}
+
+.btn-contato:hover{
+	background-color: var(--color2);
+	color: var(--color3);
+	width: 200px;
+}
+
+/*pagina sobre*/
+#sobrenos {
+	background-color: #2b2b2b;
+	margin: auto;
+	width: 100%;
+}
+
+section img {
+	height: 100vh;
+	float: right;
+	margin-right: auto;
+	background-position: center center;
+}
+
+.sobre-texto {
+	margin: auto;
+/*	text-align: center;*/
+}
+
+.sobre-texto .subtitulo{
+	color: var(--color3);
+}
+
+/*pagina serviços*/
+#servicos {
+	margin: auto;
+	width: 100%;
+}
+
+#servicos h1 {
+	font-weight: bold;
+}
+
+#servicos h3 {
+	color: var(--color3);
+	font-weight: bold;
+}
+
+/*pagina projetos*/
+#projetos {
+	margin: auto;
+	height: auto;
+	background-color: #2b2b2b;
+	display: flex;
+}
+
+#projetos h2 {
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+#projetos .card {
+	margin: auto;
+	height: 100vh;
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+#projetos img {
+	width: 100%;
+}
+#projetos .card p {
+	color: var(--color2);
+}
+#projetos .card a{
+	display: flex;
+	text-align: center;
+	margin: 10px auto;
+	color: #2b2b2b;
+	background-color: var(--color3);
+	padding: 15px;
+
+	border: 0;
+	-o-border: 0;
+	-ms-border: 0;
+	-moz-border: 0;
+	-webkit-border: 0;
+	border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#projetos .card a:hover {
+	background-color: var(--bg2);
+	color: var(--color3);
+}
+
+/*pagina porque nós*/
+#porquenos {
+	height: auto;
+	background-color: var(--bg2);
+}
+
+#porquenos h2 {
+	text-align: center;
+}
+
+#porquenos .card {
+	margin: 50px 60px;
+	height: 400px;
+	background-color: #e5e5e5;
+	border: 0;
+	-o-border: 0;
+	-ms-border: 0;
+	-moz-border: 0;
+	-webkit-border: 0;
+	border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+#porquenos .card .conteudo{
+	margin: auto;
+	text-align: center;
+}
+
+#porquenos .card .conteudo p:nth-of-type(1) {
+	color: var(--color3);
+	font-weight: bold;
+}
+#porquenos .card .conteudo p:nth-of-type(2) {
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/*pagina depoimentos*/
+#depoimentos {
+	height: auto;
+	background-color: #e5e5e5;
+}
+
+#depoimentos h2 {
+	font-size: 50px;
+	text-transform: capitalize;
+	margin: 25px;
+}
+
+#depoimentos .col:nth-of-type(2){
+	margin: 20px;
+}
+
+/*pagina contato*/
+#contato {
+	width: auto;
+	background: linear-gradient(45deg, #2b2b2b 0%,#ccab27 100%);
+	background-image: url('../img/contato1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+}
+
+#contato h2 {
+	float: left;
+	text-align: center;
+	margin: 25px auto;
+	color: black;
+	font-weight: 700;
+}
+
+#contato .row{
+	margin: auto;
+	color: white;
+	width: auto;
+}
+
+#contato .col {
+	padding: 7%;
+	color: black;
+	font-weight: 700;
+	margin: auto;
+}
+
+/*ir ao topo*/
+.topo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin: 10px;
+	font-size: 3rem;
+	color: yellow;
+}
+
+/*-------------- Responsivo -------- */
+
+@media (max-width: 900px){
+	#sobrenos img {
+		width: 100%;
+		height: 50%;
+		margin: auto;
+	}
+
+	.row{
+		flex-direction: column;
+	}
+
+/*	pagina servicos*/
+	#servicos .row {
+		margin: auto;
+		width: 90%;
+		flex-direction: column;
+	}
+
+/*	pagina porque nos*/
+	#porquenos{
+		width: 100%;
+		height: auto;
+	}
+	#porquenos .card {
+		margin: 25px auto;
+	}
+
+/*	pagina depoimentos*/
+	#depoimentos {
+		margin: auto;
+	}
+
+	#depoimentos .row , #depoimentos .col {
+		margin: auto;
+		width: auto;
+	}
+
+/*	pagina contato*/
+	#contato {
+		height: auto;
+		width: 100%;
+		margin: auto;
+	}
+
+	#contato .col {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 550px){
+	.header-text {
+		margin: 25% auto;
+		text-align: center;
+	}
+
+	/*	pagina servicos*/
+	#servicos .row {
+		margin: auto;
+		width: 90%;
+		flex-direction: column;
+	}
+
+/*	pagina porque nos*/
+	#porquenos{
+		width: 100%;
+		height: auto;
+	}
+	#porquenos .card {
+		margin: 25px auto;
+	}
+
+/*	pagina depoimentos*/
+
+	#depoimentos {
+		margin: auto;
+	}
+
+	#depoimentos h2 {
+		font-size: 30px;
+	}
+
+	#depoimentos .row .col p:nth-of-type(2n + 1){
+		width: 100%;
+	}
+
+	#depoimentos .row , #depoimentos .col {
+		margin: auto;
+		width: 100%;
+	}
+
+/*	pagina contato*/
+	#contato {
+		height: auto;
+		width: 100%;
+		margin: auto;
+	}
+
+	#contato .col {
+		margin: auto;
+	}
+
+}
